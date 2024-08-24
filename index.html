@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class=" bg-dark-subtle w-75 m-auto p-5 ">
+      <label>Product Name </label>
+      <input id="productName" type="text" class="form-control" required>
+      <div class="alert alert-danger p-2 my-2 d-none " id="nameAlert">At least write 3 letters </div>
+      <label>Product Price </label>
+      <input id="productPrice" type="number" class="form-control" required>
+      <div class="alert alert-danger p-2 my-2 d-none " id="priceAlert">write product price... </div>
+      <label>Product Category </label>
+      <input id="productCategory" type="text" class="form-control" required>
+      <div class="alert alert-danger p-2 my-2 d-none " id="Alert">At least write 3 letters </div>
+
+      <label>Product Description </label>
+      <textarea id="productDesc" class="form-control"></textarea>
+      <button disabled id="addBtn" class=" btn btn-dark float-end my-3">add Product</button>
+      <div class="clearfix"></div>
+      <input  id="searchInput" type="text" placeholder="search by name..." class="form-control my-3">
+
+
+      <table class="table">
+        <thead>
+          <th>name</th>
+          <th>price</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+
+    </div>
+ 
+
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
